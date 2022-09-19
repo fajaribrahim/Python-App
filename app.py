@@ -13,7 +13,7 @@ from landmarks import landmarks
 
 window = tk.Tk()
 window.geometry("480x700")
-window.title("Swoleboi") 
+window.title("Fajar Ibrahim") 
 ck.set_appearance_mode("dark")
 
 classLabel = ck.CTkLabel(window, height=40, width=120, text_font=("Arial", 20), text_color="black", padx=10)
@@ -55,7 +55,7 @@ pose = mp_pose.Pose(min_tracking_confidence=0.5, min_detection_confidence=0.5)
 with open('deadlift.pkl', 'rb') as f: 
     model = pickle.load(f) 
 
-cap = cv2.VideoCapture(3)
+cap = cv2.VideoCapture(0)
 current_stage = ''
 counter = 0 
 bodylang_prob = np.array([0,0]) 
